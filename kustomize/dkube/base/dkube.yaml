@@ -311,7 +311,7 @@ spec:
         - --force-new-cluster
         - --heartbeat-interval=1000
         - --election-timeout=10000
-        image: k8s.gcr.io/etcd-amd64:3.1.12
+        image: quay.io/coreos/etcd:v3.4.14
         imagePullPolicy: IfNotPresent
         name: main
         livenessProbe:
