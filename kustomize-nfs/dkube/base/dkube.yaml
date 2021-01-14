@@ -302,7 +302,7 @@ spec:
         - --force-new-cluster
         - --heartbeat-interval=1000
         - --election-timeout=10000
-        image: k8s.gcr.io/etcd-amd64:3.1.12
+        image: gcr.io/etcd-development/etcd@sha256:ff9226afaecbe1683f797f84326d1494092ac41d688b8d68b69f7a6462d51dc9
         imagePullPolicy: IfNotPresent
         name: main
         livenessProbe:
