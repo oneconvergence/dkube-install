@@ -537,6 +537,7 @@ spec:
             - exact: d3-uname
             - exact: d3-role
             - exact: x-cluster-id
+            - exact: Authorization
         serverUri:
           cluster: outbound|3001||dkube-auth-server.dkube.svc.cluster.local
           failureModeAllow: false

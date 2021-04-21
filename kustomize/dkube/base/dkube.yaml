@@ -414,6 +414,8 @@ spec:
       nodeSelector: NODE_SELECTOR
       restartPolicy: Always
       schedulerName: default-scheduler
+      serviceAccount: dkube
+      serviceAccountName: dkube
       terminationGracePeriodSeconds: 30
 ---
 apiVersion: apps/v1
