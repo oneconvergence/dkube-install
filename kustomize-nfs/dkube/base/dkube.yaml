@@ -562,6 +562,8 @@ spec:
         - mountPath: /dkube
           name: store
       - env:
+        - name: DKUBE_LOG_MAX_AGE_IN_DAYS
+          value: "30"
         - name: DKUBE_MOUNT_PATH
           value: /home/dkube/d3s
         - name: CLUSTER_ID
