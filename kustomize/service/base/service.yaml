@@ -1323,7 +1323,7 @@ spec:
     - uri:
         prefix: /dkube/v2/controller
       method:
-        exact: POST
+        regex: POST|PUT|DELETE
     route:
     - destination:
         port:
