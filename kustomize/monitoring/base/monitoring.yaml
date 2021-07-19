@@ -84,8 +84,8 @@ data:
           summary: High Memory Usage
   prometheus.yml: |-
     global:
-      scrape_interval: 5s
-      evaluation_interval: 5s
+      scrape_interval: 30s
+      evaluation_interval: 30s
     rule_files:
       - /etc/prometheus/prometheus.rules
     scrape_configs:
@@ -553,11 +553,12 @@ spec:
     spec:
       containers:
         - name: prometheus
-          image: prom/prometheus:v2.13.1
+          image: prom/prometheus:v2.19.1
           args:
             - "--config.file=/etc/prometheus/prometheus.yml"
             - "--storage.tsdb.path=/prometheus/"
             - "--storage.tsdb.retention.time=3650d"
+            - "web.enable-admin-api"
           ports:
             - containerPort: 9090
           volumeMounts:
