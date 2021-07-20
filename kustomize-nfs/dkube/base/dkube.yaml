@@ -486,6 +486,8 @@ spec:
       - env:
         - name: DKUBE_SERVICE_ACCOUNT
           value: dkube
+        - name: CLUSTER_ID
+          value: clusterID
         image: dkubeWatcherImage
         imagePullPolicy: IfNotPresent
         name: main
